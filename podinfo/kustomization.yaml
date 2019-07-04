@@ -1,6 +1,8 @@
 namespace: podinfo
 resources:
 - ns.yaml
+- ingress.yaml
+- certificate.yaml
 - podinfo-dep.yaml
 - podinfo-hpa.yaml
 - podinfo-svc-clusterip.yaml
