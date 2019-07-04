@@ -6,3 +6,4 @@ resources:
 - podinfo-dep.yaml
 - podinfo-svc-clusterip.yaml
 - sample-secret.yaml
+- service-monitor.yaml
