@@ -1,21 +1,21 @@
-apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
-metadata:
-  labels:
-    monitoring: prometheus
-    k8s-app: podinfo
-  name: podinfo
-spec:
-  selector:
-    matchLabels:
-      app.kubernetes.io/name: podinfo
-  namespaceSelector:
-    matchNames:
-    - podinfo-public
-  endpoints:
-  - port: metrics
-    path: /metrics
----
+#apiVersion: monitoring.coreos.com/v1
+#kind: ServiceMonitor
+#metadata:
+#  labels:
+#    monitoring: prometheus
+#    k8s-app: podinfo
+#  name: podinfo
+#spec:
+#  selector:
+#    matchLabels:
+#      app.kubernetes.io/name: podinfo
+#  namespaceSelector:
+#    matchNames:
+#    - podinfo-public
+#  endpoints:
+#  - port: metrics
+#    path: /metrics
+#---
 kind: Service
 apiVersion: v1
 metadata:
