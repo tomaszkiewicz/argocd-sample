@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx-public
+    nginx.ingress.kubernetes.io/proxy-buffer-size: 10k
+  name: podinfo
+spec:
+  rules:
+  - host: podinfo.aws.luktom.net
+    http:
+      paths:
+      - backend:
+          serviceName: podinfo
+          servicePort: 9898
+  tls:
+  - hosts:
+    - podinfo.aws.luktom.net
+    secretName: podinfo-tls
