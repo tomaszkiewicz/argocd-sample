@@ -3,4 +3,4 @@ resources:
 - ns.yaml
 - podinfo-dep.yaml
 - podinfo-svc-clusterip.yaml
-#- service-monitor.yaml
+- service-monitor.yaml
