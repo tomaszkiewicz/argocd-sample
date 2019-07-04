@@ -16,19 +16,19 @@
 #  - port: metrics
 #    path: /metrics
 #---
-kind: Service
-apiVersion: v1
-metadata:
-  name: podinfo-prometheus-discovery
-  labels:
-    app.kubernetes.io/name: podinfo
-spec:
-  type: ClusterIP
-  clusterIP: None
-  selector:
-    app.kubernetes.io/name: podinfo
-    app.kubernetes.io/part-of: podinfo
-  ports:
-  - name: metrics
-    port: 10254
-    targetPort: metrics
+#kind: Service
+#apiVersion: v1
+#metadata:
+#  name: podinfo-prometheus-discovery
+#  labels:
+#    app.kubernetes.io/name: podinfo
+#spec:
+#  type: ClusterIP
+#  clusterIP: None
+#  selector:
+#    app.kubernetes.io/name: podinfo
+#    app.kubernetes.io/part-of: podinfo
+#  ports:
+#  - name: metrics
+#    port: 10254
+#    targetPort: metrics
