@@ -1,4 +1,6 @@
+namespace: podinfo
 resources:
+- ns.yaml
 - podinfo-dep.yaml
 - podinfo-hpa.yaml
 - podinfo-svc-clusterip.yaml
