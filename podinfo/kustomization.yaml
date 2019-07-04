@@ -1,0 +1,4 @@
+resources:
+- podinfo-dep.yaml
+- podinfo-hpa.yaml
+- podinfo-svc-clusterip.yaml
